@@ -1,0 +1,491 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i';
+$titulos: 'Alegreya Sans SC'; 
+$textos: 'Raleway';
+$azul: #2e88e4;
+
+// generales
+
+//botón menu
+
+nav ul a.btn{
+	margin-top: 5px !important;
+}
+
+.lan-ico{
+    margin-top: -52px;
+    margin-left: -25px;
+    font-size: 2rem !important;
+}
+.btn .fa-caret-down{
+    margin-top: -15px;
+    margin-right: -25px;
+}
+.btn-style{
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+.lan-ico a:hover {
+    line-height: normal !important;
+}
+
+nav .btn-style  a:hover {
+    line-height: normal !important;
+}
+
+.mg-btn{
+    margin-left: -35px;
+    margin-right: -8px;
+    font-size: 11px;
+}
+
+.lan-ul{
+	margin-top: -2px;
+    margin-left: 1%;
+}
+.mg-lan{
+    margin-left: inherit;
+    font-size: 13px;
+    font-weight: 500;
+}
+.mg-li{
+    margin-top: -9px;
+    margin-bottom: -10px;
+}
+
+
+//
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+hr{
+    border-color: #CCCDD2 !important;
+	width: 5%;	
+}
+.bg-portada{
+	background: url(../images/back_01.jpg) no-repeat no-repeat center;
+    min-height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.bg-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.5;
+    background-color: #060630 /*rgba(6, 6, 48, 0.43)*/;
+}
+
+
+.bg-vision{
+	background: url(../images/back_2.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	min-height: 400px;
+	padding-top:1%;	
+}
+.bg-porque{
+	background: url(../images/back_3.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	min-height: 400px;
+	padding-top:1%;	
+}
+
+.bg-dark-blue{
+	background: #171a29;
+	padding-top:1%;
+}
+
+.asymetric-box{
+	height:400px;
+}
+
+
+.triangulo{
+	margin-top: -20px;
+    margin-left: 47%;
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #fff;
+}
+
+nav{
+    background-color: rgba(83, 111, 146, 0.73);
+	box-shadow: none !important;
+}
+
+nav ul a {
+    font-family: $textos, sans-serif;
+    font-weight: 500;
+    color: white;
+    line-height: normal;
+    // display: block;
+    // padding: 0 15px;
+    font-size: 15px;
+    padding: 7px 0;
+    margin: 15px 15px;
+    	&:hover{
+        // line-height: inherit;
+    	background-color: transparent;
+    	border-bottom: 2px solid $azul;
+    	border-style: 80%;
+    }
+}
+
+.mg-li2 a {
+    padding: 10px !important;
+    margin: inherit !important;
+    &:hover{
+        // line-height: inherit;
+    	background-color: transparent;
+    	border-bottom: none;
+    }
+
+}
+
+
+
+
+nav .side-nav  a:hover {
+    line-height: inherit !important;
+}
+
+.portada{
+	h1{
+		position: relative;
+		margin-top: 37%;
+		font-family: $textos, sans-serif;
+		font-size: 2.5rem;
+		color:white;
+		font-weight: 500 !important;
+		letter-spacing: 0.1em;
+		span{
+			font-family: $textos, sans-serif;
+			font-weight: 100;
+			font-size: 2.5rem;
+			letter-spacing: 7px;
+		}
+	}
+	.logo-portada{
+		margin-top: 5%;
+		position: relative;
+		height: 400px;
+	}
+	.flecha-down{
+		margin-top: 5%;
+		position: relative;
+		font-size: 2.5rem;
+	}
+}
+
+
+.blue-box{
+	margin-top: -2%;
+	border: 1px #2e88e4;
+	border-style: solid;
+	position: relative;
+}
+
+.blue-padding{
+  margin-bottom:1% !important;
+}
+
+.equipo_multi{
+		letter-spacing: 0.04em;
+	}
+.about-us, .about , .partner, .why-us, .contact{
+	h2{
+		font-size: 38px;
+		font-family: $titulos;
+		font-weight: 800;
+		margin-top: 8%;
+	}
+	p{ 
+		font-family: $textos, sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		margin-top: 5%;
+		margin-bottom: 10%;
+		.blue-text{
+			color: $azul;
+		}
+	}
+	img{
+		margin-top: 3%;
+	}
+}
+
+
+.partner{
+	h3{
+		font-family: $textos, sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		color: #5E5E5F;
+		letter-spacing: 2px;
+		margin-top: 3%;
+		margin-bottom: 5%;
+		}
+	h4{
+		font-family: $titulos, sans-serif;
+		font-size: 22px;
+		font-weight: 700;
+		letter-spacing: 0.01em;
+	}
+}
+
+.why-us{
+	h3{
+		font-family: $textos, sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		color: #222;
+		letter-spacing: 1px;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		line-height: inherit;
+	}
+	hr:last-child{
+    border-color: $azul !important;
+	width: 10%;
+	margin-bottom:5%;	
+	}
+}
+
+.contact{
+	h2{
+		margin-top: 4% !important;
+	}
+	h5{
+		font-size: 18px;
+		font-family: $textos;
+		font-weight: 500;
+		text-align: left;
+	}
+	address{
+		font-size: 18px;
+		font-family: $textos;
+		font-weight: 300;
+		text-align: left;
+		font-style: normal;
+	}
+	.mg-top{
+		margin-top: 7%;
+	}
+	label{
+		text-align: left;
+		font-family: $textos;
+
+	}
+	.input-field input:focus + label {
+     color: #ACB3C1;
+       }
+	  /* icon prefix focus color */
+   .input-field .prefix {
+     color: #39455B;
+   }
+     /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #66738C;
+   }
+      /* label underline focus color */
+   .input-field input {
+	border-bottom: 1px solid #39455B;
+    box-shadow: 0 1px 0 0 #39455B;
+    }
+   .input-field input:focus {
+     border-bottom: 1px solid #66738C;
+     box-shadow: 0 1px 0 0 #66738C;
+   }
+
+	.input-field textarea:focus + label{
+		color: #ACB3C1;
+	}
+
+   textarea{
+   	border-bottom: 1px solid #39455B;
+    box-shadow: 0 1px 0 0 #39455B;
+    	&:focus:not([readonly]){
+	    	border-bottom: 1px solid #66738C;
+	    	box-shadow: 0 1px 0 0 #66738C;
+       }
+   }
+
+   button{
+   	background-color:#39455B;
+   	font-family: $textos;
+   	font-weight: 200;
+   	margin-bottom: 5%;
+   }
+   .btn:hover, .btn-large:hover {
+    background-color: #39455B;
+	}
+}
+
+footer{
+	a{
+		color:#222;
+		font-size: 16px;
+		font-family: $textos;
+		&:hover{
+			color: $azul;
+		}
+	}
+}
+
+
+
+/* Para solucionar problema de scroll responsive*/ 
+body, html{
+	max-width: 100%;
+	overflow-x: hidden !important;
+}/* ********** */
+
+
+#map {
+    width:100%;
+    height:500px;
+}
+.map {
+    position:relative;
+    .mask {
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background: rgba(0,0,0,0.1);
+        z-index:22;
+    }
+}
+
+
+/* Responsive */
+
+// ipad
+@media only screen and (max-device-width : 768px)  {
+	nav{
+		background-color: transparent;
+	}
+	.portada{
+		    h1 {
+	      	margin-top: 50% !important;
+    	}
+	}
+	.triangulo{
+    	margin-left: 45%;
+    }
+
+}
+
+// mobiles
+@media only screen and (max-width: 600px)  {
+	nav{
+		background-color: transparent;
+	}
+	#sidenav-overlay{
+		display: none;
+	}
+	.portada {
+	    h1 {
+		      font-size: 3rem;
+		      margin-top: 60% ;
+	      	span{
+	      		font-size: 3rem;
+	      	}
+	    }
+	}
+    h5{
+    	font-size: 1rem !important;
+    	margin-left: 40%;
+    }
+    .about-us, .about , .why-us, .partner, .contact{
+    	h2{
+    		font-size: 1.8rem !important;
+    	}
+    	p{
+    		font-size: 1.20rem !important;
+    	}
+    }
+    .partner{
+    	p{
+    		font-size: 1rem  !important;
+    	}
+    	h4{
+    		font-size: 1.3rem;
+    	}
+    	h3{
+    		font-size: 1.4rem;
+    		margin-bottom: 10%;
+    	}
+    }
+
+    .why-us hr:last-child {
+		margin-bottom: 10%;
+    }
+    .triangulo{
+    	margin-left: 40%;
+    }
+    address{
+    	font-size: 12px !important;
+    	margin-left: 35%;
+    	margin-bottom: 5%;
+    }
+    .bg-dark-blue {
+    	margin-top: -5%;
+    }
+    hr {
+    width: 10%;
+	}
+	.parallax-container{
+		height: 300px !important;
+	}
+	.why-us {
+		h2{
+			margin-top: 15%;
+		}
+		h3 {
+		font-size: 1.1rem;
+		line-height: 2;}
+	}
+	.blue-box {
+    margin-top: -6%;
+    margin-left: 2em;
+    margin-right: 2em;
+	}
+	footer{
+		margin-top: -5%;
+	    padding-top: 10px;
+	    padding-bottom: 5px;
+		a{
+			font-size: 11px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 412px){
+	nav{
+		background-color: transparent;
+		height: 65px !important;
+	}
+}
+
+
