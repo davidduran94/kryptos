@@ -64,7 +64,7 @@ hr {
 }
 
 .bg-portada {
-    background: url(../images/back_3.jpg) no-repeat no-repeat center;
+    background: url(../images/data.jpg) no-repeat no-repeat center;
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@ hr {
 }
 
 .bg-vision {
-    background: url(../images/back_2.jpg) no-repeat center;
+    background: url(../images/second-vig.gif) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -95,7 +95,7 @@ hr {
 }
 
 .bg-porque {
-    background: url(../images/back_3.jpg) no-repeat center;
+    background: url(../images/hero.png) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -303,7 +303,7 @@ nav .side-nav a:hover {
 }
 
 .contact .mg-top {
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 .contact label {
@@ -383,7 +383,7 @@ html {
 
 #map {
     width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 .map {

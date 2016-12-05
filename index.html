@@ -250,48 +250,6 @@
                     $(".text-kryp").removeClass("hide")
                 }
             });
-            // $(window).scroll(function(){
-            //     if( $(this).scrollTop() > 0 ){
-            //         $('header').addClass('header2');
-            //     } else {
-            //         $('header').removeClass('header2');
-            //     }
-            // });
-            /*
-             $(window).scroll(function () {
-             var scrollh = $(this).scrollTop();
-             if (scrollh == 0) {
-             $(".navbar").css({
-             'height':'75px',
-             'transition': 'height 0.1s',
-             });
-             $(".brand-logo").css({
-             'height':'75px',
-             });
-             $(".img-sz").css({
-             'width':'80%',
-             });
-             $(".font-ul").css({
-             'font-size':'10px',
-             });
-             
-             } else {
-             $(".navbar").css({
-             'height':'60px',
-             'transition': 'height 0.1s',
-             });
-             $(".brand-logo").css({
-             'height':'60px',
-             });
-             $(".img-sz").css({
-             'width':'60%',
-             });
-             $("nav ul a.btn").css({
-             'margin-top':'-20px !important',
-             });
-             }
-             });
-             */
         });
     </script>
     <script src="js/jquery.translate.js"></script>
@@ -383,7 +341,7 @@
                 <hr/>
                 <div class="row">
                     <div class="offset-m3 col m6">
-                        <p class="flow-text"><span class="trn">Somos una compañía altamente especializada en el diseño e implementación de</span> <span class="blue-text trn">estrategias integrales de seguridad</span> <span class="trn">para empresas del sector energético.</span>
+                        <p class="flow-text"><span class="trn">Somos una compañía altamente especializada en el diseño e implementación de</span> <span class="blue-text trn">estrategias integrales de seguridad</span> <span class="trn">ofreciendo a nuestros clientes <strong>Confidencialidad, integridad, autentificación y no repudio.</strong> Carácteristicas pilares de la criptografía.</span>
                         </p>
                     </div>
                 </div>
@@ -407,14 +365,13 @@
     <section class="about ">
         <a name="vision"></a>
         <div class="parallax-container">
-            <div class="parallax"><img src="images/back_2.jpg"></div>
-            <div class="center-align">
-                <h2 class="uppercase white-text"><span class="trn">Nuestra Visión</span></h2>
-                <hr/>
+            <div class="parallax"><img src="images/files.jpg"></div>
+            <div class="">
+                <h2 style="margin-left:10px;" class="uppercase white-text"><span class="trn">Soluciones tecnologícas de seguridad</span></h2>
                 <div class="row">
-                    <div class="offset-m3 col m6">
+                    <div class="offset col m6">
                         <p class="white-text">
-                            <span class="trn">Convertirnos en el mejor participante del mercado que apoye a la industria de la energía a minimizar los riesgos asociados a sus operaciones en el país, maximizando así su rentabilidad y generación de valor.</span>
+                            <span class="trn">Usamos criptografía simetrica y asimetrica para apoyar que apoye a diferentes industrias a minimizar los riesgos asociados a sus datos, maximizando así su confiabilidad y generación de valor.</span>
                         </p>
                     </div>
                 </div>
@@ -436,7 +393,7 @@
                         <div class="row">
                             <div class="offset-m1 col m10">
                                 <p class="blue-padding">
-                                    <span class="trn">Nuestros socios internacionales y locales están posicionados como líderes en sus ramos, </span><span class="trn blue-text">somos una fuente confiable </span><span class="trn">de fuerza y conocimiento regional.</span>
+                                    <span class="trn">Contamos con investigadores y empresarios, destacados en su ramo </span><span class="trn blue-text">somos una fuente confiable </span><span class="trn">de protección y análisis de datos.</span>
                                 </p>
                             </div>
                         </div>
@@ -491,7 +448,7 @@
             <div class="row">
                 <div class="offset-m3 col m6">
                     <p class="white-text">
-                        <span class="trn">Somos una empresa que diseña e implementa estrategias de seguridad integrales, garantizando la gestión de pérdidas asociadas tanto a procesos y procedimientos industriales como a actos delictivos, fundada por expertos en seguridad del sector energético con amplia experiencia nacional e internacional.</span>
+                        <span class="trn">Somos una empresa que diseña e implementa estrategias de seguridad integrales, garantizando la gestión de pérdidas asociadas tanto a procesos y procedimientos como a actos delictivos, fundada por expertos en seguridad informática y empresarial con amplia experiencia nacional e internacional.</span>
                     </p>
                 </div>
             </div>
@@ -514,15 +471,40 @@
             <h2 class="uppercase white-text"><span class="trn">Contáctanos</span></h2>
             <hr/>
             <div class="row mg-top">
-                <div class="offset-m2 col m2 s12">
+                <div class="offset-m1 col m4 s12">
                     <h5 class="uppercase white-text"><span class="trn">Dirección</span></h5>
                     <address class="white-text">
-						Montes Urales 720,<br/> Lomas de Chapultepec <br/>Miguel Hidalgo<br/> Ciudad de México 
+						Montes Urales 720, Lomas de Chapultepec, Miguel Hidalgo, Ciudad de México 
 					</address>
+                    <!-- mapa -->
+                    <div class="row map">
+                        <div id="map"></div>
+                        <script>
+                            function initMap() {
+                                var pos = {
+                                    lat: 19.425236,
+                                    lng: -99.203990
+                                };
+                                var mapDiv = document.getElementById('map');
+                                var map = new google.maps.Map(mapDiv, {
+                                    center: pos,
+                                    scrollwheel: false,
+                                    zoom: 17
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: pos,
+                                    map: map
+                                        //icon: '/img/80YjG.png'
+                                });
+                            }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz8oD9L03dn2VXjBNaOaiGE8lf-UyZtQk&callback=initMap" async defer></script>
+                    </div>
+                    <!-- FIN- mapa -->
                 </div>
-                <div class="col m8">
+                <div class="col m7">
                     <!-- Formulario -->
-                    <div class="row">
+                    <div class="row" style="margin-top: 90px;">
                         <form class=" col m9 s12" name="contact">
                             <div class="row">
                                 <div class="input-field col m6 s12">
@@ -571,34 +553,6 @@
                 </div>
             </div>
         </div>
-        <!-- mapa -->
-        <div class="row map">
-            <!-- 	<div class="overlay" onClick="style.pointerEvents='none'">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7034071774556!2d-99.20631728509338!3d19.425216786888534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f6dc32e271%3A0x32f87b65703142c6!2sCalle+Montes+Urales+720%2C+Lomas+-+Virreyes%2C+Lomas+de+Chapultepec+V+Secc%2C+11000+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1sen!2smx!4v1475089929040" width="100%" height="500"  frameborder="0" style="border:0;" allowfullscreen></iframe>	
-			</div> -->
-            <div id="map"></div>
-            <script>
-                function initMap() {
-                    var pos = {
-                        lat: 19.425236,
-                        lng: -99.203990
-                    };
-                    var mapDiv = document.getElementById('map');
-                    var map = new google.maps.Map(mapDiv, {
-                        center: pos,
-                        scrollwheel: false,
-                        zoom: 17
-                    });
-                    var marker = new google.maps.Marker({
-                        position: pos,
-                        map: map
-                            //icon: '/img/80YjG.png'
-                    });
-                }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz8oD9L03dn2VXjBNaOaiGE8lf-UyZtQk&callback=initMap" async defer></script>
-        </div>
-        <!-- FIN- mapa -->
     </section>
     <!-- FIN-contacto  -->
 
@@ -618,6 +572,8 @@
             </div>
         </div>
     </footer>
+
+
     <!-- FIN- footer -->
 </body>
 
