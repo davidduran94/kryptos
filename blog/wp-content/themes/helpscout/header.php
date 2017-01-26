@@ -77,16 +77,16 @@
                 <nav id="main-nav" class="white z-depth-0">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <a href="/" class="brand-logo"><img src="<?php echo get_template_directory_uri() ?>/images/cerebros-logo.png" height="53px"/></a>
+                            <a href="/" class="brand-logo"><img src="<?php echo get_template_directory_uri() ?>/images/kryptoslogo.png" height="53px"/></a>
                             <div class="right hide-on-med-and-down"> 
-                                <ul class="tabs transparent" style="width: 100%; margin-top: 20px;">
-                                    <li class="tab login"><a class="white-text active" href="/login">Login</a></li>
-                                    <li class="tab register"><a class="white-text" href="/register">Registro</a></li>
-                                    <div class="indicator" style="right: 125.5px; left: 0px; background-color: #86D2E6;"></div>
+                                <ul class="tabs transparent" style="width: 100%; margin-top: -5px;">
+                                    <!-- <li class="tab login"><a class="white-text active" href="/login">Login</a></li> -->
+                                    <!-- <li class="tab register"><a class="white-text" href="/register">Registro</a></li> -->
+                                    <div class="indicator" style="right: 125.5px; left: 0px; background-color: rgb(241,88,42);"></div>
                                     <div class="indicator" style="right: 125.5px; left: 0px;"></div>
                                 </ul>
                                 <div class="row" style="display: inline; z-index: 80;" >
-                                    <a style="color: #86D2E6; display: inline-table;" href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+                                    <a style="color: rgb(241,88,42); display: inline-table;" href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
                                 </div>
                             </div>
                         </div>

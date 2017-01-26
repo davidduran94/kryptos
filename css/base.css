@@ -64,7 +64,7 @@ hr {
 }
 
 .bg-portada {
-    background: url(../images/data.jpg) no-repeat no-repeat center;
+    background: url(../images/back1.jpg) no-repeat no-repeat center;
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -95,7 +95,7 @@ hr {
 }
 
 .bg-porque {
-    background: url(../images/hero.png) no-repeat center;
+    background: url(../images/hero3.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -191,7 +191,7 @@ nav .side-nav a:hover {
 
 .blue-box {
     margin-top: 20px;
-    border: 1px #2e88e4;
+    border: 1px rgb(241,88,42);
     border-style: solid;
     position: relative;
 }
