@@ -241,13 +241,19 @@
 
             $(window).scroll(function() {
                 if ($(window).scrollTop() + $(window).height() > ($(document).height() - 3600)) {
-                    $(".text-kryp").addClass("hide")
+                    $(".text-kryp").addClass("hide");
+                    $("nav").addClass("mini");
+                    $("#nav-web").addClass("navwebmini");
+                    $("#main-logo").addClass("logomini");
                 }
             });
 
             $(window).scroll(function() {
                 if ($(window).scrollTop() + $(window).height() < ($(document).height() - 3600)) {
-                    $(".text-kryp").removeClass("hide")
+                    $(".text-kryp").removeClass("hide");
+                    $("nav").removeClass("mini");
+                    $("#nav-web").removeClass("navwebmini");
+                    $("#main-logo").removeClass("logomini");
                 }
             });
         });
@@ -255,6 +261,18 @@
     <script src="js/jquery.translate.js"></script>
 </head>
 
+<style type="text/css">
+    .mini{
+        height: 64px !important;
+    }
+    .logomini{
+        margin-top: 10px;
+        width: 100px;
+    }
+    .navwebmini{
+        margin-top: 5px !important;
+    }
+</style>
 <body>
     <!-- header -->
     <header>
@@ -262,16 +280,16 @@
             <div class="bg-overlay"></div>
             <div id="nav">
                 <div class="navbar-fixed">
-                    <nav class="">
+                    <nav class="" style="background-color: rgba(255, 255, 255, 0.73) !important; height: 100px;">
                         <div class="nav-wrapper container">
-                            <a href="#" class="logo-petrosec brand-logo"><img style="margin-top: 15px;" width="100px" height="50px;" class="responsive-img" src="images/kryptoslogo.png"></a>
+                            <a href="#" class="logo-petrosec brand-logo"><img id="main-logo" style="margin-top: 19px;" width="150px" height="50px;" class="responsive-img" src="images/kryptoslogo.png"></a>
                             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="black-text mdi-navigation-menu"></i></a>
-                            <ul id="nav-web" class="right hide-on-med-and-down">
-                                <li><a href="#nosotros"><span class="trn">Nosotros</span></a></li>
-                                <li><a href="#vision"><span class="trn">Visión</span></a></li>
-                                <li><a href="#alianzas"><span class="trn">Alianzas</span></a></li>
-                                <li><a href="#porque-nosotros"><span class="trn">Por qué nosotros</span></a></li>
-                                <li><a href="#contacto"><span class="trn">Contacto</span></a></li>
+                            <ul id="nav-web" style="margin-top: 15px;" class="right hide-on-med-and-down">
+                                <li><a style="color: rgb(48, 49, 124);" href="#nosotros"><span class="trn">Nosotros</span></a></li>
+                                <li><a style="color: rgb(48, 49, 124); href="#vision"><span class="trn">Visión</span></a></li>
+                                <li><a style="color: rgb(48, 49, 124); href="#alianzas"><span class="trn">Alianzas</span></a></li>
+                                <li><a style="color: rgb(48, 49, 124); href="#porque-nosotros"><span class="trn">Por qué nosotros</span></a></li>
+                                <li><a style="color: rgb(48, 49, 124); href="#contacto"><span class="trn">Contacto</span></a></li>
                                 <li>
                                     <a class=' btn-style transparent dropdown-button btn white-text' href='#' data-activates='dropdown1'><i class="fa fa-caret-down right" aria-hidden="true"></i><span class=" mg-btn" id="current_lang"><i class="lan-ico white-text material-icons">language</i></span></a>
                                     <ul id='dropdown1' class='dropdown-content lan-ul'>
